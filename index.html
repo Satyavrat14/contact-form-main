@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact-Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="#">
+    <h1>Contact Us</h1>
+    <div class="form-opt">
+      <label for="fname">
+        <p>First Name <span>*</span></p>
+        <input type="text" id="fname" required class="control">
+      </label>
+      <label for="lname">
+        <p>Last Name <span>*</span></p>
+        <input type="text" id="lname" required class="control">
+      </label>
+    </div>
+    <div class="form-opt">
+      <label for="email">
+        <p>Email Address <span>*</span></p>
+        <input type="email" name="email" id="email" required class="control">
+      </label>
+    </div>
+    <div>
+        <p>Query Type <span>*</span></p>
+      <div class="form-opt">
+        <label for="gen" class="opt">
+          <input type="radio" id="gen" name="type" checked>
+          <p>General Enquiry</p>
+        </label>
+          <label for="req"  class="opt">
+            <input type="radio" name="type" id="req">
+            <p>Support Request</p>
+          </label>
+      </div>
+        
+    </div>
+
+    <div class="form-opt">
+      <label for="message">
+        <p>Message <span>*</span></p>
+        <textarea name="message" id="message" rows="6" class="control"></textarea>
+      </label>
+    </div>
+
+    <div class="term">
+      <label for="term">
+        <input type="checkbox" name="term" id="term" >I consent to being conducted by the team <span>*</span>
+      </label>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
